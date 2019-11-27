@@ -16,9 +16,9 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files | egrep -v 'kaminari-(core|actionview|activerecord)' | grep -v '^test'`.split("\n")
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.0.0'
+  spec.required_ruby_version = '>= 2.6.0'
 
-  spec.add_dependency 'activesupport', '>= 4.1.0'
+  spec.add_dependency 'activesupport', '>= 6.0.1'
   spec.add_dependency 'kaminari-core', Kaminari::VERSION
   spec.add_dependency 'kaminari-actionview', Kaminari::VERSION
   spec.add_dependency 'kaminari-activerecord', Kaminari::VERSION
